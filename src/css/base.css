@@ -8,7 +8,7 @@
 @import 'basscss-color-basic';
 
 /* Example custom file import */
-@import './color';
+@import './color/colors';
 
 /* Custom media queries */
 @custom-media --breakpoint-sm (min-width: 40em);
