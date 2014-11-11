@@ -1,4 +1,13 @@
+/*
+ * Basscss Base
+ *
+ * Remove or comment out unneeded modules and import your own files.
+ * Adjust global media queries and variables below.
+ *
+ */
 
+
+/* Basscss Modules */
 @import 'basscss-base';
 @import 'basscss-utilities';
 @import 'basscss-positions';
@@ -7,13 +16,16 @@
 @import 'basscss-table-object';
 @import 'basscss-color-basic';
 
+
 /* Example custom file import */
-@import './color/colors';
+@import './color/borders';
+
 
 /* Custom media queries */
 @custom-media --breakpoint-sm (min-width: 40em);
 @custom-media --breakpoint-md (min-width: 52em);
 @custom-media --breakpoint-lg (min-width: 64em);
+
 
 /* Variables */
 :root {
