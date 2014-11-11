@@ -1,5 +1,5 @@
 # Bassplate
-Boilerplate for Basscss with Gulp, Rework, and Browserify
+Boilerplate for [Basscss](http://basscss.com) with Gulp, Rework, and Browserify
 
 ## Features
 
