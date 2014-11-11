@@ -1,0 +1,21 @@
+{
+  "name": "bassplate",
+  "version": "0.0.1",
+  "description": "Boilerplate for Basscss with Browserify",
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "devDependencies": {
+    "basscss-ui-utilities": "0.0.2",
+    "basscss-table-object": "0.0.5",
+    "basscss-grid": "0.0.11",
+    "basscss-utilities": "0.0.19",
+    "basscss-base": "0.0.24",
+    "basscss-color-basic": "^0.2.4",
+    "basscss-positions": "0.0.3",
+    "gulp-rename": "^1.2.0",
+    "gulp": "^3.8.10",
+    "gulp-browserify": "^0.5.0",
+    "gulp-basswork": "0.0.9",
+    "gulp-webserver": "^0.8.7"
+  }
+}
