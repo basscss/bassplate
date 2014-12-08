@@ -4,14 +4,16 @@
   "description": "Boilerplate for Basscss with Gulp, Rework, and Browserify",
   "author": "Brent Jackson",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "basscss-base": "latest",
     "basscss-color-basic": "latest",
     "basscss-grid": "latest",
     "basscss-positions": "latest",
     "basscss-table-object": "latest",
     "basscss-ui-utilities": "latest",
-    "basscss-utilities": "latest",
+    "basscss-utilities": "latest"
+  },
+  "devDependencies": {
     "gulp": "^3.8.10",
     "gulp-basswork": "0.0.9",
     "gulp-browserify": "^0.5.0",
