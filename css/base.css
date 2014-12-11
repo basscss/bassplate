@@ -1,14 +1,14 @@
 /*
- * Basscss Base
- *
- * Remove or comment out unneeded modules and import your own files.
- * Adjust global media queries and variables below.
- *
- */
+    Bassplate
+
+    Remove or comment out unneeded modules and import your own files.
+    Adjust global media queries and variables below.
+
+*/
 
 /* Basscss Modules */
 
-/* Basscss Base */
+/* Base */
 
 body,
 button {
@@ -250,9 +250,7 @@ td {
 
 
 
-
-
-/* Basscss Utilities */
+/* Utility */
 
 /* Basscss Utility Layout */
 
@@ -592,8 +590,6 @@ td {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-
-
 /*
     Basscss Positions
 */
@@ -650,8 +646,6 @@ td {
   margin: auto;
   display: table;
 }
-
-/* Basscss UI Utilities */
 
 /* Basscss UI Utility Button Sizes */
 
@@ -724,7 +718,7 @@ td {
   display: block !important;
 }
 
-
+/* Layout */
 
 /*
     Basscss Grid
@@ -1033,11 +1027,101 @@ td {
   }
 }
 
-/*
- * Basscss Color Basic
- */
+/* Color */
 
-/* Base Element Themes */
+/* Basscss Colors */
+
+.dark-gray {
+  color: #333;
+}
+
+.white {
+  color: white;
+}
+
+.blue {
+  color: #0076df;
+}
+
+.mid-gray {
+  color: #777;
+}
+
+.light-gray {
+  color: #ccc;
+}
+
+.lighter-gray {
+  color: #eee;
+}
+
+.red {
+  color: #f95020;
+}
+
+.green {
+  color: #00cf26;
+}
+
+.yellow {
+  color: #efcc00;
+}
+
+.bg-dark-gray {
+  background-color: #333;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-blue {
+  background-color: #0076df;
+}
+
+.bg-mid-gray {
+  background-color: #777;
+}
+
+.bg-light-gray {
+  background-color: #ccc;
+}
+
+.bg-lighter-gray {
+  background-color: #eee;
+}
+
+.bg-red {
+  background-color: #f95020;
+}
+
+.bg-green {
+  background-color: #00cf26;
+}
+
+.bg-yellow {
+  background-color: #efcc00;
+}
+
+.bg-darken-1 {
+  background-color: rgba(0, 0, 0, .0625);
+}
+
+.bg-darken-2 {
+  background-color: rgba(0, 0, 0, .125);
+}
+
+.bg-darken-3 {
+  background-color: rgba(0, 0, 0, .25);
+}
+
+.bg-darken-4 {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+
+
+/* Basscss Color Base */
 
 body {
   color: #333;
@@ -1065,6 +1149,10 @@ hr {
   border-bottom-width: 1px;
   border-bottom-color: #ccc;
 }
+
+
+
+/* Basscss Color Forms */
 
 .field-light {
   background-color: white;
@@ -1123,6 +1211,10 @@ hr {
   box-shadow: 0 0 2px rgba(0, 118, 223, .5);
 }
 
+
+
+/* Basscss Color Forms Dark */
+
 .field-dark {
   color: white;
   background-color: rgba(0, 0, 0, .25);
@@ -1171,12 +1263,9 @@ hr {
   border-color: #f95020;
 }
 
-.table-light th,
-.table-light td {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #ccc;
-}
+
+
+/* Basscss Color Buttons */
 
 .button-blue {
   color: white;
@@ -1349,93 +1438,9 @@ hr {
   border-right: 1px solid #ccc;
 }
 
-.dark-gray {
-  color: #333;
-}
 
-.white {
-  color: white;
-}
 
-.blue {
-  color: #0076df;
-}
-
-.mid-gray {
-  color: #777;
-}
-
-.light-gray {
-  color: #ccc;
-}
-
-.lighter-gray {
-  color: #eee;
-}
-
-.red {
-  color: #f95020;
-}
-
-.green {
-  color: #00cf26;
-}
-
-.yellow {
-  color: #efcc00;
-}
-
-.bg-dark-gray {
-  background-color: #333;
-}
-
-.bg-white {
-  background-color: white;
-}
-
-.bg-blue {
-  background-color: #0076df;
-}
-
-.bg-mid-gray {
-  background-color: #777;
-}
-
-.bg-light-gray {
-  background-color: #ccc;
-}
-
-.bg-lighter-gray {
-  background-color: #eee;
-}
-
-.bg-red {
-  background-color: #f95020;
-}
-
-.bg-green {
-  background-color: #00cf26;
-}
-
-.bg-yellow {
-  background-color: #efcc00;
-}
-
-.bg-darken-1 {
-  background-color: rgba(0, 0, 0, .0625);
-}
-
-.bg-darken-2 {
-  background-color: rgba(0, 0, 0, .125);
-}
-
-.bg-darken-3 {
-  background-color: rgba(0, 0, 0, .25);
-}
-
-.bg-darken-4 {
-  background-color: rgba(0, 0, 0, .5);
-}
+/* Basscss Color Borders */
 
 .border {
   border-style: solid;
@@ -1495,7 +1500,16 @@ hr {
   border-radius: 0;
 }
 
-/* Defaults */
+
+
+/* Basscss Color Tables */
+
+.table-light th,
+.table-light td {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ccc;
+}
 
 
 
