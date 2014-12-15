@@ -17,14 +17,6 @@ gulp.task('css', function() {
     .pipe(gulp.dest('./css'));
 });
 
-gulp.task('sass', function() {
-  gulp.src('./src/scss/base.scss')
-    .pipe(sass({
-      includePaths: ['./node_modules']
-    }))
-    .pipe(gulp.dest('./css'));
-});
-
 gulp.task('js', function() {
   gulp.src('./src/js/app.js')
     .pipe(browserify())
@@ -40,5 +32,19 @@ gulp.task('serve', function() {
 
 gulp.task('default', ['css', 'js', 'serve'], function() {
   gulp.watch(['./src/**/*'], ['css', 'js']);
+});
+
+
+// Alternative Sass support
+// Use this instead of the css task when using Sass
+gulp.task('sass', function() {
+  gulp.src('./src/scss/base.scss')
+    .pipe(sass({
+      includePaths: ['./node_modules']
+    }))
+    .pipe(gulp.dest('./css'))
+    .pipe(minifyCss())
+    .pipe(rename({ extname: '.min.css' }))
+    .pipe(gulp.dest('./css'));
 });
 
