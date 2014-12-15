@@ -27,7 +27,7 @@
     "basscss-color-buttons": "latest",
     "basscss-colors": "latest",
     "basscss-color-borders": "latest",
-    "basscss-defaults": "latest",
+    "basscss-defaults": "latest"
   },
   "devDependencies": {
     "gulp": "^3.8.10",
