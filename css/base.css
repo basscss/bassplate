@@ -8,8 +8,6 @@
 
 /* Basscss Modules */
 
-/* Basscss Base */
-
 body,
 button {
   margin: 0;
@@ -249,10 +247,6 @@ td {
 }
 
 
-
-
-
-/* Basscss Utilities */
 
 /* Basscss Utility Layout */
 
@@ -592,8 +586,6 @@ td {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-
-
 /*
     Basscss Positions
 */
@@ -650,8 +642,6 @@ td {
   margin: auto;
   display: table;
 }
-
-/* Basscss UI Utilities */
 
 /* Basscss UI Utility Button Sizes */
 
@@ -717,14 +707,12 @@ td {
 /* Basscss UI Utility Disclosure States */
 
 .disclosure-show {
-  display: none !important;
+  display: none;
 }
 
 .is-active .disclosure-show {
-  display: block !important;
+  display: block;
 }
-
-
 
 /*
     Basscss Grid
@@ -1033,11 +1021,7 @@ td {
   }
 }
 
-/*
- * Basscss Color Basic
- */
-
-/* Base Element Themes */
+/* Basscss Color Base */
 
 body {
   color: #333;
@@ -1065,6 +1049,10 @@ hr {
   border-bottom-width: 1px;
   border-bottom-color: #ccc;
 }
+
+
+
+/* Basscss Color Forms */
 
 .field-light {
   background-color: white;
@@ -1123,6 +1111,10 @@ hr {
   box-shadow: 0 0 2px rgba(0, 118, 223, .5);
 }
 
+
+
+/* Basscss Color Forms Dark */
+
 .field-dark {
   color: white;
   background-color: rgba(0, 0, 0, .25);
@@ -1171,12 +1163,20 @@ hr {
   border-color: #f95020;
 }
 
+
+
+/* Basscss Color Tables */
+
 .table-light th,
 .table-light td {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #ccc;
 }
+
+
+
+/* Basscss Color Buttons */
 
 .button-blue {
   color: white;
@@ -1349,6 +1349,10 @@ hr {
   border-right: 1px solid #ccc;
 }
 
+
+
+/* Basscss Colors */
+
 .dark-gray {
   color: #333;
 }
@@ -1437,6 +1441,10 @@ hr {
   background-color: rgba(0, 0, 0, .5);
 }
 
+
+
+/* Basscss Color Borders */
+
 .border {
   border-style: solid;
   border-width: 1px;
@@ -1495,7 +1503,9 @@ hr {
   border-radius: 0;
 }
 
-/* Defaults */
+
+
+/* Basscss Defaults */
 
 
 

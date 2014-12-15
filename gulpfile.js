@@ -6,6 +6,7 @@ var minifyCss = require('gulp-minify-css');
 var browserify = require('gulp-browserify');
 var uglify = require('gulp-uglify');
 var webserver = require('gulp-webserver');
+var sass = require('gulp-sass');
 
 gulp.task('css', function() {
   gulp.src('./src/css/base.css')
@@ -13,6 +14,14 @@ gulp.task('css', function() {
     .pipe(gulp.dest('./css'))
     .pipe(minifyCss())
     .pipe(rename({ extname: '.min.css' }))
+    .pipe(gulp.dest('./css'));
+});
+
+gulp.task('sass', function() {
+  gulp.src('./src/scss/base.scss')
+    .pipe(sass({
+      includePaths: ['./node_modules']
+    }))
     .pipe(gulp.dest('./css'));
 });
 
