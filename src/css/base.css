@@ -13,16 +13,20 @@
 @import 'basscss-base-forms';
 @import 'basscss-base-buttons';
 @import 'basscss-base-tables';
+
 @import 'basscss-utility-layout';
 @import 'basscss-utility-typography';
 @import 'basscss-utility-white-space';
 @import 'basscss-utility-responsive-states';
 @import 'basscss-positions';
+
 @import 'basscss-ui-utility-button-sizes';
 @import 'basscss-ui-utility-groups';
 @import 'basscss-ui-utility-disclosure-states';
+
 @import 'basscss-grid';
 @import 'basscss-table-object';
+
 @import 'basscss-color-base';
 @import 'basscss-color-forms';
 @import 'basscss-color-forms-dark';
@@ -67,6 +71,17 @@
   --space-3: 2rem;
   --space-4: 4rem;
 
+  --form-field-font-size: 1rem;
+  --form-field-height: 2.25rem;
+  --form-field-padding-y: .5rem;
+  --form-field-padding-x: .5rem;
+
+  --button-font-size: inherit;
+  --button-font-weight: bold;
+  --button-line-height: 1.125rem;
+  --button-padding-y: .5rem;
+  --button-padding-x: 1rem;
+
   /* Grid container max-width */
   --container-width: 64em;
 
@@ -89,6 +104,8 @@
   --border-color: var(--light-gray);
   --border-width: 1px;
   --border-radius: 3px;
+
+  --hover-background-color: var(--darken-1);
 
 }
 

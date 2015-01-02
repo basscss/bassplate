@@ -8,8 +8,6 @@
 
 /* Basscss Modules */
 
-/* Basscss Base */
-
 body,
 button {
   margin: 0;
@@ -141,6 +139,7 @@ input,
 select,
 textarea,
 fieldset {
+  font-size: 1rem;
   margin-top: 0;
   margin-bottom: .5rem;
 }
@@ -158,25 +157,27 @@ input[type=time],
 input[type=url],
 input[type=week] {
   box-sizing: border-box;
-  height: 2.25em;
-  padding: .25em 1rem;
+  height: 2.25rem;
+  padding: .5rem .5rem;
+  vertical-align: middle;
   -webkit-appearance: none;
 }
 
 select {
   box-sizing: border-box;
   line-height: 1.75;
-  padding: .25em 1rem;
+  padding: .5rem .5rem;
 }
 
 select:not([multiple]) {
-  height: 2.25em;
+  height: 2.25rem;
+  vertical-align: middle;
 }
 
 textarea {
   box-sizing: border-box;
   line-height: 1.75;
-  padding: .25em 1rem;
+  padding: .5rem .5rem;
 }
 
 .fieldset-reset {
@@ -196,16 +197,18 @@ textarea {
 
 button,
 .button {
+  font-size: inherit;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
   box-sizing: border-box;
-  line-height: 1.125;
-  padding: .5em 1rem;
+  line-height: 1.125rem;
+  padding: .5rem 1rem;
   margin: 0;
   height: auto;
   border: 1px solid transparent;
+  vertical-align: middle;
   -webkit-appearance: none;
 }
 
@@ -223,7 +226,7 @@ button,
 /* Basscss Base Tables */
 
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
   border-spacing: 0;
   max-width: 100%;
   width: 100%;
@@ -236,7 +239,7 @@ th {
 
 th,
 td {
-  padding: .25em 1rem;
+  padding: .25rem 1rem;
   line-height: inherit;
 }
 
@@ -249,10 +252,6 @@ td {
 }
 
 
-
-
-
-/* Basscss Utilities */
 
 /* Basscss Utility Layout */
 
@@ -592,11 +591,7 @@ td {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-
-
-/*
-    Basscss Positions
-*/
+/* Basscss Positions */
 
 .relative {
   position: relative;
@@ -651,16 +646,14 @@ td {
   display: table;
 }
 
-/* Basscss UI Utilities */
-
 /* Basscss UI Utility Button Sizes */
 
 .button-small {
-  padding: .25em .5rem;
+  padding: .25rem .5rem;
 }
 
 .button-big {
-  line-height: 1.625;
+  padding: 1rem 1.25rem;
 }
 
 .button-narrow {
@@ -717,20 +710,14 @@ td {
 /* Basscss UI Utility Disclosure States */
 
 .disclosure-show {
-  display: none !important;
+  display: none;
 }
 
 .is-active .disclosure-show {
-  display: block !important;
+  display: block;
 }
 
-
-
-/*
-    Basscss Grid
-*/
-
-
+/* Basscss Grid */
 
 .container {
   max-width: 64em;
@@ -976,12 +963,9 @@ td {
   }
 }
 
-/*
 
-  Table Object
-  http://jxnblk.github.io/table-object
 
-*/
+/* Basscss Table Object */
 
 .table {
   display: table;
@@ -1033,11 +1017,7 @@ td {
   }
 }
 
-/*
- * Basscss Color Basic
- */
-
-/* Base Element Themes */
+/* Basscss Color Base */
 
 body {
   color: #333;
@@ -1065,6 +1045,10 @@ hr {
   border-bottom-width: 1px;
   border-bottom-color: #ccc;
 }
+
+
+
+/* Basscss Color Forms */
 
 .field-light {
   background-color: white;
@@ -1123,6 +1107,10 @@ hr {
   box-shadow: 0 0 2px rgba(0, 118, 223, .5);
 }
 
+
+
+/* Basscss Color Forms Dark */
+
 .field-dark {
   color: white;
   background-color: rgba(0, 0, 0, .25);
@@ -1171,12 +1159,61 @@ hr {
   border-color: #f95020;
 }
 
+
+
+/* Basscss Color Tables */
+
 .table-light th,
 .table-light td {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #ccc;
 }
+
+.table-light tr:last-child td {
+  border-bottom: 0;
+}
+
+
+
+/* Basscss Color Buttons */
+
+/* Basscss Button Light Gray */
+
+.button-light-gray {
+  color: #333;
+  background-color: #ccc;
+  border-radius: 3px;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: box-shadow, background-color;
+          transition-property: box-shadow, background-color;
+}
+
+.button-light-gray:hover {
+  opacity: .875;
+}
+
+.button-light-gray:active,
+.button-light-gray:is-active {
+  box-shadow: inset 0 0 0 32px rgba(0, 0, 0, .125), inset 0 2px 3px 0 rgba(0, 0, 0, .25);
+}
+
+.button-light-gray:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 118, 223, .5);
+}
+
+.button-light-gray:disabled,
+.button-light-gray.is-disabled {
+  opacity: .5;
+}
+
+
+
+/* Basscss Button Blue */
 
 .button-blue {
   color: white;
@@ -1209,8 +1246,12 @@ hr {
   opacity: .5;
 }
 
+
+
+/* Basscss Button Blue Outline */
+
 .button-blue-outline {
-  line-height: 1;
+  line-height: 1rem;
   color: #0076df;
   background-color: transparent;
   border-radius: 3px;
@@ -1245,6 +1286,10 @@ hr {
   opacity: .5;
 }
 
+
+
+/* Basscss Button Gray */
+
 .button-gray {
   color: white;
   background-color: #777;
@@ -1275,6 +1320,10 @@ hr {
 .button-gray.is-disabled {
   opacity: .5;
 }
+
+
+
+/* Basscss Button Red */
 
 .button-red {
   color: white;
@@ -1309,6 +1358,8 @@ hr {
 
 
 
+/* Basscss Button Nav Light */
+
 .button-nav-light:hover {
   background-color: rgba(0, 0, 0, .0625);
 }
@@ -1317,6 +1368,10 @@ hr {
 .button-nav-light.is-active {
   color: #333;
 }
+
+
+
+/* Basscss Button Nav Dark */
 
 .button-nav-dark {
   color: white;
@@ -1330,6 +1385,10 @@ hr {
 .button-nav-dark.is-active {
   background-color: rgba(0, 0, 0, .125);
 }
+
+
+
+/* Basscss Button Nav Tab */
 
 .button-nav-tab {
   margin-bottom: -1px;
@@ -1348,6 +1407,12 @@ hr {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
+
+
+
+
+
+/* Basscss Colors */
 
 .dark-gray {
   color: #333;
@@ -1437,6 +1502,10 @@ hr {
   background-color: rgba(0, 0, 0, .5);
 }
 
+
+
+/* Basscss Color Borders */
+
 .border {
   border-style: solid;
   border-width: 1px;
@@ -1495,7 +1564,9 @@ hr {
   border-radius: 0;
 }
 
-/* Defaults */
+
+
+/* Basscss Defaults */
 
 
 

@@ -3,7 +3,8 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 var basswork = require('gulp-basswork');
 var minifyCss = require('gulp-minify-css');
-var browserify = require('gulp-browserify');
+var browserify = require('browserify');
+var transform = require('vinyl-transform');
 var uglify = require('gulp-uglify');
 var webserver = require('gulp-webserver');
 
@@ -17,8 +18,12 @@ gulp.task('css', function() {
 });
 
 gulp.task('js', function() {
+  var browserified = transform(function(filename) {
+    var b = browserify(filename);
+    return b.bundle();
+  });
   gulp.src('./src/js/app.js')
-    .pipe(browserify())
+    .pipe(browserified)
     .pipe(uglify())
     .pipe(rename({ extname: '.min.js' }))
     .pipe(gulp.dest('./js'));
