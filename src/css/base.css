@@ -9,31 +9,32 @@
 
 /* Basscss Modules */
 @import 'basscss-base-reset';
-@import 'basscss-base-typography';
 @import 'basscss-base-forms';
 @import 'basscss-base-buttons';
 @import 'basscss-base-tables';
+@import 'basscss-base-typography';
 
 @import 'basscss-utility-layout';
 @import 'basscss-utility-typography';
 @import 'basscss-utility-white-space';
 @import 'basscss-utility-responsive-states';
 @import 'basscss-positions';
-
 @import 'basscss-ui-utility-button-sizes';
-@import 'basscss-ui-utility-groups';
-@import 'basscss-ui-utility-disclosure-states';
 
 @import 'basscss-grid';
-@import 'basscss-table-object';
+@import 'flex-object';
 
 @import 'basscss-color-base';
 @import 'basscss-color-forms';
 @import 'basscss-color-forms-dark';
+@import 'basscss-input-range';
 @import 'basscss-color-tables';
-@import 'basscss-color-buttons';
-@import 'basscss-colors';
+
+@import 'basscss-button-outline';
+@import 'basscss-button-transparent';
+@import 'basscss-background-images';
 @import 'basscss-color-borders';
+@import 'basscss-colors';
 
 @import 'basscss-defaults';
 
@@ -86,26 +87,35 @@
   --container-width: 64em;
 
   /* Colors */
-  --blue: #0076df;
-  --red: #f95020;
-  --green: #00cf26;
-  --yellow: #efcc00;
 
-  --dark-gray: #333;
-  --mid-gray: #777;
-  --light-gray: #ccc;
-  --lighter-gray: #eee;
+  --black: #222;
+  --gray:   #aaa;
+  --silver: #ddd;
+  --white:  #fff;
+
+  --aqua:   #7fdbff;
+  --blue:   #0074d9;
+  --navy:   #001f3f;
+  --teal:   #39cccc;
+  --green:  #2ecc40;
+  --olive:  #3d9970;
+  --lime:   #01ff70;
+
+  --yellow: #ffdc00;
+  --orange: #ff851b;
+  --red:    #ff4136;
+  --fuchsia:#f012be;
+  --purple: #b10dc9;
+  --maroon: #85144b;
 
   --darken-1: rgba(#000,.0625);
   --darken-2: rgba(#000,.125);
   --darken-3: rgba(#000,.25);
   --darken-4: rgba(#000,.5);
 
-  --border-color: var(--light-gray);
+  --border-color: var(--darken-2);
   --border-width: 1px;
   --border-radius: 3px;
-
-  --hover-background-color: var(--darken-1);
 
 }
 

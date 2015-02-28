@@ -5,16 +5,20 @@
   "author": "Brent Jackson",
   "license": "MIT",
   "dependencies": {
+    "basscss-background-images": "latest",
     "basscss-base-buttons": "latest",
     "basscss-base-forms": "latest",
     "basscss-base-reset": "latest",
     "basscss-base-tables": "latest",
     "basscss-base-typography": "latest",
+    "basscss-button-outline": "latest",
+    "basscss-button-transparent": "latest",
     "basscss-color-base": "latest",
     "basscss-color-borders": "latest",
     "basscss-color-buttons": "latest",
     "basscss-color-forms": "latest",
     "basscss-color-forms-dark": "latest",
+    "basscss-input-range": "latest",
     "basscss-color-tables": "latest",
     "basscss-colors": "latest",
     "basscss-defaults": "latest",
@@ -22,21 +26,18 @@
     "basscss-positions": "latest",
     "basscss-table-object": "latest",
     "basscss-ui-utility-button-sizes": "latest",
-    "basscss-ui-utility-disclosure-states": "latest",
     "basscss-ui-utility-groups": "latest",
     "basscss-utility-layout": "latest",
     "basscss-utility-responsive-states": "latest",
     "basscss-utility-typography": "latest",
     "basscss-utility-white-space": "latest",
-    "browserify": "^8.0.3",
-    "vinyl-transform": "^1.0.0"
+    "flex-object": "latest"
   },
   "devDependencies": {
-    "gulp": "^3.8.10",
-    "gulp-basswork": "0.0.9",
+    "gulp": "^3.8.11",
+    "gulp-basswork": "^0.1.0",
     "gulp-minify-css": "^0.3.11",
     "gulp-rename": "^1.2.0",
-    "gulp-uglify": "^1.0.1",
     "gulp-webserver": "^0.8.7"
   },
   "scripts": {
@@ -51,8 +52,7 @@
     "OOCSS",
     "Basscss",
     "Gulp",
-    "Boilerplate",
-    "Browserify"
+    "Boilerplate"
   ],
   "bugs": {
     "url": "https://github.com/jxnblk/bassplate/issues"
