@@ -1,12 +1,11 @@
 # Bassplate
-Boilerplate for [Basscss](http://basscss.com) with Gulp, Rework, and Browserify
+Boilerplate for [Basscss](http://basscss.com) with Gulp and Rework
 
 ## Features
 
 - Basic `index.html` template with asset links and responsive viewport meta tag
 - Starter folder structure
 - Gulp task for compiling CSS with Rework
-- Gulp task for compiling JS with Browserify
 - Gulp task for local web server
 - Basswork CSS preprocessor
   - Autoprefixer
@@ -39,7 +38,7 @@ Run the default Gulp task to compile assets and start a local web server.
 gulp
 ```
 
-Use `index.html` as a starting point and edit the files in `src/` to customize the CSS and add JavaScript.
+Use `index.html` as a starting point and edit the files in `src/` to customize the CSS.
 
 ---
 
