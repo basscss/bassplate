@@ -1,7 +1,7 @@
 {
   "name": "bassplate",
   "version": "1.0.0",
-  "description": "Boilerplate for Basscss with Gulp, Rework, and Browserify",
+  "description": "Boilerplate for Basscss with cssnext",
   "author": "Brent Jackson",
   "license": "MIT",
   "dependencies": {
@@ -13,17 +13,17 @@
     "basscss-base-typography": "latest",
     "basscss-button-outline": "latest",
     "basscss-button-transparent": "latest",
-    "basscss-color-base": "latest",
+    "basscss-color-base": "^1.1.2",
     "basscss-color-borders": "latest",
-    "basscss-color-buttons": "latest",
-    "basscss-color-forms": "latest",
-    "basscss-color-forms-dark": "latest",
-    "basscss-input-range": "latest",
+    "basscss-color-forms": "^1.1.1",
+    "basscss-color-forms-dark": "^0.1.1",
     "basscss-color-tables": "latest",
-    "basscss-colors": "latest",
-    "basscss-defaults": "latest",
+    "basscss-colors": "^1.0.6",
+    "basscss-defaults": "^1.0.1",
     "basscss-grid": "latest",
+    "basscss-input-range": "^1.1.1",
     "basscss-positions": "latest",
+    "basscss-progress": "^1.0.1",
     "basscss-table-object": "latest",
     "basscss-ui-utility-button-sizes": "latest",
     "basscss-ui-utility-groups": "latest",
@@ -34,14 +34,17 @@
     "flex-object": "latest"
   },
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-basswork": "^0.1.0",
-    "gulp-minify-css": "^0.3.11",
-    "gulp-rename": "^1.2.0",
-    "gulp-webserver": "^0.8.7"
+    "clean-css": "^3.1.8",
+    "cssnext": "^1.1.0",
+    "http-server": "^0.8.0",
+    "watch": "^0.14.0"
   },
   "scripts": {
-    "start": "gulp"
+    "css": "cssnext src/css/base.css css/base.css",
+    "watch:css": "watch 'npm run css' ./src/css",
+    "minify:css": "cleancss css/base.css -o css/base.min.css",
+    "serve": "http-server -p 8000",
+    "start": "npm run watch:css & npm run serve"
   },
   "repository": {
     "type": "git",
@@ -51,7 +54,7 @@
     "CSS",
     "OOCSS",
     "Basscss",
-    "Gulp",
+    "cssnext",
     "Boilerplate"
   ],
   "bugs": {

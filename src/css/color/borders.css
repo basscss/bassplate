@@ -1,6 +1,6 @@
 /* Example custom styles */
 
-.border-green {
-  border-color: var(--green);
+.border-thick {
+  border-width: 3px;
 }
 
