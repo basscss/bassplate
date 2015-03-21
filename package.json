@@ -1,7 +1,7 @@
 {
   "name": "bassplate",
   "version": "1.0.0",
-  "description": "Boilerplate for Basscss with Gulp, Rework, and Browserify",
+  "description": "Boilerplate for Basscss with cssnext",
   "author": "Brent Jackson",
   "license": "MIT",
   "dependencies": {
@@ -54,7 +54,7 @@
     "CSS",
     "OOCSS",
     "Basscss",
-    "Gulp",
+    "cssnext",
     "Boilerplate"
   ],
   "bugs": {

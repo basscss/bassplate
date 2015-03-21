@@ -5,13 +5,13 @@ Boilerplate for [Basscss](http://basscss.com) with cssnext
 
 - Basic `index.html` template with asset links and responsive viewport meta tag
 - Starter folder structure
-- NPM run scripts for processing with [cssnext](https://cssnext.github.io/)
-- NPM run script for local web server
+- npm run scripts for processing with [cssnext](https://cssnext.github.io/)
+- npm run script for local web server
 - cssnext features
   - [Autoprefixer](https://github.com/postcss/autoprefixer)
   - [Custom properties](http://www.w3.org/TR/css-variables/) (variables)
   - [Custom Media Queries](http://dev.w3.org/csswg/mediaqueries/#custom-mq)
-  - [Inline imports](https://github.com/postcss/postcss-import) for NPM modules and local files
+  - [Inline imports](https://github.com/postcss/postcss-import) for npm modules and local files
   - [Reduce `calc()`](https://github.com/postcss/postcss-calc)
   - [`color()`](http://dev.w3.org/csswg/css-color/#modifying-colors)
 
@@ -25,7 +25,7 @@ cd new-project
 rm -rf .git
 ```
 
-Install dev dependencies. (Requires Node NPM -- [Install Node](http://nodejs.org/download/))
+Install dev dependencies. (Requires Node and npm -- [Install Node](http://nodejs.org/download/))
 
 ``` bash
 npm install
