@@ -34,14 +34,17 @@
     "flex-object": "latest"
   },
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-basswork": "^0.1.0",
-    "gulp-minify-css": "^0.3.11",
-    "gulp-rename": "^1.2.0",
-    "gulp-webserver": "^0.8.7"
+    "clean-css": "^3.1.8",
+    "cssnext": "^1.1.0",
+    "http-server": "^0.8.0",
+    "watch": "^0.14.0"
   },
   "scripts": {
-    "start": "gulp"
+    "css": "cssnext src/css/base.css css/base.css",
+    "watch:css": "watch 'npm run css' ./src/css",
+    "minify:css": "cleancss css/base.css -o css/base.min.css",
+    "serve": "http-server -p 8000",
+    "start": "npm run watch:css & npm run serve"
   },
   "repository": {
     "type": "git",

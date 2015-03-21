@@ -1,19 +1,19 @@
 # Bassplate
-Boilerplate for [Basscss](http://basscss.com) with Gulp and Rework
+Boilerplate for [Basscss](http://basscss.com) with cssnext
 
 ## Features
 
 - Basic `index.html` template with asset links and responsive viewport meta tag
 - Starter folder structure
-- Gulp task for compiling CSS with Rework
-- Gulp task for local web server
-- Basswork CSS preprocessor
-  - Autoprefixer
-  - Rework Variables based on the CSS variables syntax
-  - Rework Custom Media Queries based on the CSS syntax
-  - Rework NPM imports
-  - Rework Calc to compile `calc()` syntax
-  - Rework Plugin Colors
+- NPM run scripts for processing with [cssnext](https://cssnext.github.io/)
+- NPM run script for local web server
+- cssnext features
+  - [Autoprefixer](https://github.com/postcss/autoprefixer)
+  - [Custom properties](http://www.w3.org/TR/css-variables/) (variables)
+  - [Custom Media Queries](http://dev.w3.org/csswg/mediaqueries/#custom-mq)
+  - [Inline imports](https://github.com/postcss/postcss-import) for NPM modules and local files
+  - [Reduce `calc()`](https://github.com/postcss/postcss-calc)
+  - [`color()`](http://dev.w3.org/csswg/css-color/#modifying-colors)
 
 ## Getting Started
 
@@ -31,11 +31,10 @@ Install dev dependencies. (Requires Node NPM -- [Install Node](http://nodejs.org
 npm install
 ```
 
-Run the default Gulp task to compile assets and start a local web server.
-(Requires Gulp -- [Install Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started))
+Start watching files for compilation and start development server.
 
 ``` bash
-gulp
+npm start
 ```
 
 Use `index.html` as a starting point and edit the files in `src/` to customize the CSS.
