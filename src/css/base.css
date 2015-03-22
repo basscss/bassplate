@@ -115,7 +115,7 @@
   --border-width: 1px;
   --border-radius: 3px;
   --border-color: var(--darken-2);
-  --hover-background-color: var(--darken-1)
+  --hover-background-color: var(--darken-1);
 
   --link-color: var(--blue);
   --button-backgroun-color: var(--blue);
