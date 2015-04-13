@@ -11,44 +11,46 @@
     "basscss-base-reset": "latest",
     "basscss-base-tables": "latest",
     "basscss-base-typography": "latest",
+    "basscss-borders": "latest",
     "basscss-button-outline": "latest",
+    "basscss-button-sizes": "latest",
     "basscss-button-transparent": "latest",
-    "basscss-color-base": "^1.1.2",
-    "basscss-color-borders": "latest",
-    "basscss-color-forms": "^1.1.1",
-    "basscss-color-forms-dark": "^0.1.1",
+    "basscss-color-base": "latest",
+    "basscss-color-forms": "latest",
+    "basscss-color-forms-dark": "latest",
     "basscss-color-tables": "latest",
-    "basscss-colors": "^1.0.6",
-    "basscss-defaults": "^1.0.1",
+    "basscss-colors": "latest",
+    "basscss-defaults": "latest",
     "basscss-grid": "latest",
-    "basscss-input-range": "^1.1.1",
+    "basscss-input-range": "latest",
+    "basscss-media-object": "latest",
     "basscss-positions": "latest",
-    "basscss-progress": "^1.0.1",
+    "basscss-progress": "^1.0.5",
+    "basscss-responsive-states": "latest",
+    "basscss-responsive-white-space": "latest",
     "basscss-table-object": "latest",
-    "basscss-ui-utility-button-sizes": "latest",
     "basscss-ui-utility-groups": "latest",
+    "basscss-utility-headings": "latest",
     "basscss-utility-layout": "latest",
-    "basscss-utility-responsive-states": "latest",
     "basscss-utility-typography": "latest",
-    "basscss-utility-white-space": "latest",
+    "basscss-white-space": "latest",
     "flex-object": "latest"
   },
   "devDependencies": {
-    "clean-css": "^3.1.8",
     "cssnext": "^1.1.0",
     "http-server": "^0.8.0",
     "watch": "^0.14.0"
   },
   "scripts": {
-    "css": "cssnext src/css/base.css css/base.css",
-    "watch:css": "watch 'npm run css' ./src/css",
-    "minify:css": "cleancss css/base.css -o css/base.min.css",
-    "serve": "http-server -p 8000",
+    "css": "cssnext src/base.css css/base.css",
+    "minify:css": "cssnext src/base.css -c -o css/base.min.css",
+    "watch:css": "watch 'npm run css && npm run minify:css' ./src",
+    "serve": "http-server",
     "start": "npm run watch:css & npm run serve"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jxnblk/bassplate.git"
+    "url": "https://github.com/basscss/bassplate.git"
   },
   "keywords": [
     "CSS",
@@ -58,7 +60,8 @@
     "Boilerplate"
   ],
   "bugs": {
-    "url": "https://github.com/jxnblk/bassplate/issues"
+    "url": "https://github.com/basscss/bassplate/issues"
   },
-  "homepage": "https://github.com/jxnblk/bassplate"
+  "homepage": "https://github.com/basscss/bassplate",
+  "main": "index.js"
 }

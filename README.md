@@ -20,7 +20,7 @@ Boilerplate for [Basscss](http://basscss.com) with cssnext
 To start fresh, clone Bassplate into a new project and remove its git directory.
 
 ``` bash
-git clone https://github.com/jxnblk/bassplate.git new-project
+git clone https://github.com/basscss/bassplate.git new-project
 cd new-project
 rm -rf .git
 ```
@@ -36,6 +36,8 @@ Start watching files for compilation and start development server.
 ``` bash
 npm start
 ```
+
+Open <http://localhost:8080>
 
 Use `index.html` as a starting point and edit the files in `src/` to customize the CSS.
 

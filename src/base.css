@@ -1,8 +1,10 @@
 /*
- * Basscss Base
+ * Bassplate
+ * Boilerplate for Basscss with cssnext
+ * http://github.com/basscss/bassplate
  *
  * Remove or comment out unneeded modules and import your own files.
- * Adjust global media queries and variables below.
+ * Adjust global media queries and custom properties below.
  *
  */
 
@@ -16,10 +18,10 @@
 
 @import 'basscss-utility-layout';
 @import 'basscss-utility-typography';
-@import 'basscss-utility-white-space';
-@import 'basscss-utility-responsive-states';
+@import 'basscss-white-space';
+@import 'basscss-responsive-states';
 @import 'basscss-positions';
-@import 'basscss-ui-utility-button-sizes';
+@import 'basscss-button-sizes';
 
 @import 'basscss-grid';
 @import 'flex-object';
@@ -28,30 +30,60 @@
 @import 'basscss-color-forms';
 @import 'basscss-color-forms-dark';
 @import 'basscss-input-range';
+@import 'basscss-progress';
 @import 'basscss-color-tables';
 
 @import 'basscss-button-outline';
 @import 'basscss-button-transparent';
 @import 'basscss-background-images';
-@import 'basscss-color-borders';
+@import 'basscss-borders';
 @import 'basscss-colors';
 
-@import 'basscss-defaults';
+
+/* Optional Modules (not included in Basscss by default) */
+/*
+@import 'basscss-media-object';
+@import 'basscss-responsive-white-space';
+@import 'basscss-utility-headings';
+@import 'basscss-ui-utility-groups';
+@import 'basscss-table-object';
+@import 'basscss-color-buttons';
+@import 'basscss-button-link';
+@import 'basscss-button-blue';
+@import 'basscss-button-blue-outline';
+@import 'basscss-button-gray';
+@import 'basscss-button-light-gray';
+@import 'basscss-button-red';
+@import 'basscss-button-nav-light';
+@import 'basscss-button-nav-dark';
+@import 'basscss-button-nav-tab';
+@import 'basscss-highlight-dark';
+@import 'basscss-highlight';
+*/
+
 
 /* Example custom file import */
+/*
 @import './color/borders';
+*/
+
+
+/* Default custom properties */
+@import 'basscss-defaults';
 
 
 /* Custom media queries */
+/*
 @custom-media --breakpoint-sm (min-width: 40em);
 @custom-media --breakpoint-md (min-width: 52em);
 @custom-media --breakpoint-lg (min-width: 64em);
+*/
 
 
-/* Variables */
+/* Custom properties */
+/*
 :root {
 
-  /*
   --font-family: 'Helvetica Neue', Helvetica, sans-serif;
   --line-height: 1.5;
   --heading-font-family: var(--font-family);
@@ -121,7 +153,7 @@
   --button-backgroun-color: var(--blue);
   --pre-background-color: var(--silver);
 
-  */
 
 }
+*/
 
