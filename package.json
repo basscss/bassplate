@@ -55,7 +55,7 @@
   },
   "scripts": {
     "css": "cssnext src/base.css css/base.css",
-    "minify:css": "cssnext src/base.css -c -o css/base.min.css",
+    "minify:css": "cssnext -c src/base.css css/base.min.css",
     "watch:css": "watch 'npm run css && npm run minify:css' ./src",
     "serve": "http-server",
     "start": "npm run watch:css & npm run serve"
