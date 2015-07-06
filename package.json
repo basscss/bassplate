@@ -5,6 +5,8 @@
   "author": "Brent Jackson",
   "license": "MIT",
   "dependencies": {
+    "basscss-align": "latest",
+    "basscss-background-colors": "latest",
     "basscss-background-images": "latest",
     "basscss-base-buttons": "latest",
     "basscss-base-forms": "latest",
@@ -12,6 +14,9 @@
     "basscss-base-tables": "latest",
     "basscss-base-typography": "latest",
     "basscss-borders": "latest",
+    "basscss-btn": "latest",
+    "basscss-btn-outline": "latest",
+    "basscss-btn-primary": "latest",
     "basscss-button-blue": "latest",
     "basscss-button-blue-outline": "latest",
     "basscss-button-gray": "latest",
@@ -41,6 +46,7 @@
     "basscss-responsive-states": "latest",
     "basscss-responsive-white-space": "latest",
     "basscss-table-object": "latest",
+    "basscss-type-scale": "latest",
     "basscss-ui-utility-groups": "latest",
     "basscss-utility-headings": "latest",
     "basscss-utility-layout": "latest",
@@ -56,20 +62,20 @@
   "scripts": {
     "css": "cssnext src/base.css css/base.css",
     "minify:css": "cssnext -c src/base.css css/base.min.css",
-    "watch:css": "watch 'npm run css && npm run minify:css' ./src",
     "serve": "http-server",
-    "start": "npm run watch:css & npm run serve"
+    "start": "npm run watch:css & npm run serve",
+    "watch:css": "watch 'npm run css && npm run minify:css' ./src"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/basscss/bassplate.git"
   },
   "keywords": [
+    "Basscss",
+    "Boilerplate",
     "CSS",
     "OOCSS",
-    "Basscss",
-    "cssnext",
-    "Boilerplate"
+    "cssnext"
   ],
   "bugs": {
     "url": "https://github.com/basscss/bassplate/issues"
