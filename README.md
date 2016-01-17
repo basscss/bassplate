@@ -5,15 +5,15 @@ Boilerplate for [Basscss](http://basscss.com) with cssnext
 
 - Basic `index.html` template with asset links and responsive viewport meta tag
 - Starter folder structure
-- npm run scripts for processing with [cssnext](https://cssnext.github.io/)
+- npm run scripts for processing with postcss
 - npm run script for local web server
-- cssnext features
+- postcss plugins
   - [Autoprefixer](https://github.com/postcss/autoprefixer)
   - [Custom properties](http://www.w3.org/TR/css-variables/) (variables)
   - [Custom Media Queries](http://dev.w3.org/csswg/mediaqueries/#custom-mq)
-  - [Inline imports](https://github.com/postcss/postcss-import) for npm modules and local files
-  - [Reduce `calc()`](https://github.com/postcss/postcss-calc)
-  - [`color()`](http://dev.w3.org/csswg/css-color/#modifying-colors)
+  - [Imports](https://github.com/postcss/postcss-import) for npm modules and local files
+  - [Calc](https://github.com/postcss/postcss-calc)
+  - [Color Function](http://dev.w3.org/csswg/css-color/#modifying-colors)
 
 ## Getting Started
 
