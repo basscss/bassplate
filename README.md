@@ -1,19 +1,19 @@
 # Bassplate
-Boilerplate for [Basscss](http://basscss.com) with cssnext
+Boilerplate for [Basscss](http://basscss.com) with postcss
 
 ## Features
 
 - Basic `index.html` template with asset links and responsive viewport meta tag
 - Starter folder structure
-- npm run scripts for processing with [cssnext](https://cssnext.github.io/)
-- npm run script for local web server
-- cssnext features
-  - [Autoprefixer](https://github.com/postcss/autoprefixer)
-  - [Custom properties](http://www.w3.org/TR/css-variables/) (variables)
-  - [Custom Media Queries](http://dev.w3.org/csswg/mediaqueries/#custom-mq)
-  - [Inline imports](https://github.com/postcss/postcss-import) for npm modules and local files
-  - [Reduce `calc()`](https://github.com/postcss/postcss-calc)
-  - [`color()`](http://dev.w3.org/csswg/css-color/#modifying-colors)
+- npm run scripts for processing with postcss
+- postcss plugins
+  - import
+  - custom-media
+  - custom-properties
+  - calc
+  - color-function
+  - discard-comments
+  - autoprefixer
 
 ## Getting Started
 
@@ -31,13 +31,11 @@ Install dev dependencies. (Requires Node and npm -- [Install Node](http://nodejs
 npm install
 ```
 
-Start watching files for compilation and start development server.
+Start watching files for compilation.
 
 ``` bash
 npm start
 ```
-
-Open <http://localhost:8080>
 
 Use `index.html` as a starting point and edit the files in `src/` to customize the CSS.
 
