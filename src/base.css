@@ -24,12 +24,13 @@
 @import 'basscss-utility-typography';
 @import 'basscss-utility-layout';
 @import 'basscss-align';
-@import 'basscss-white-space';
-@import 'basscss-positions';
+@import 'basscss-margin';
+@import 'basscss-padding';
+@import 'basscss-position';
 @import 'basscss-responsive-states';
 @import 'basscss-grid';
 @import 'flex-object';
-@import 'basscss-borders';
+@import 'basscss-border';
 @import 'basscss-colors';
 @import 'basscss-background-colors';
 
