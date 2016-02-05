@@ -39,15 +39,12 @@
     "basscss-type-scale": "latest",
     "basscss-ui-utility-groups": "latest",
     "basscss-utility-headings": "latest",
-    "basscss-utility-layout": "latest",
-    "basscss-utility-typography": "latest",
+    "basscss-layout": "latest",
+    "basscss-typography": "latest",
     "flex-object": "latest"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.1",
-    "basscss-border": "^3.0.1",
-    "basscss-margin": "^1.0.1",
-    "basscss-padding": "^1.0.1",
     "cssnano": "^3.4.0",
     "postcss": "^5.0.14",
     "postcss-calc": "^5.2.0",
