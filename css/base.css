@@ -516,6 +516,12 @@ hr{
 .ml0{ margin-left:0 }
 
 
+.mx0{ margin-left:0; margin-right:0 }
+
+
+.my0{ margin-top:0; margin-bottom:0 }
+
+
 .m1{ margin:.5rem }
 
 
@@ -529,6 +535,12 @@ hr{
 
 
 .ml1{ margin-left:.5rem }
+
+
+.mx1{ margin-left:.5rem; margin-right:.5rem }
+
+
+.my1{ margin-top:.5rem; margin-bottom:.5rem }
 
 
 .m2{ margin:1rem }
@@ -546,6 +558,12 @@ hr{
 .ml2{ margin-left:1rem }
 
 
+.mx2{ margin-left:1rem; margin-right:1rem }
+
+
+.my2{ margin-top:1rem; margin-bottom:1rem }
+
+
 .m3{ margin:2rem }
 
 
@@ -559,6 +577,12 @@ hr{
 
 
 .ml3{ margin-left:2rem }
+
+
+.mx3{ margin-left:2rem; margin-right:2rem }
+
+
+.my3{ margin-top:2rem; margin-bottom:2rem }
 
 
 .m4{ margin:4rem }
@@ -576,6 +600,12 @@ hr{
 .ml4{ margin-left:4rem }
 
 
+.mx4{ margin-left:4rem; margin-right:4rem }
+
+
+.my4{ margin-top:4rem; margin-bottom:4rem }
+
+
 .mxn1{ margin-left:-.5rem; margin-right:-.5rem; }
 
 
@@ -588,13 +618,49 @@ hr{
 .mxn4{ margin-left:-4rem; margin-right:-4rem; }
 
 
+.ml-auto{ margin-left:auto }
+
+
+.mr-auto{ margin-right:auto }
+
+
 .mx-auto{ margin-left:auto; margin-right:auto; }
 
 
 .p0{ padding:0 }
 
 
+.pt0{ padding-top:0 }
+
+
+.pr0{ padding-right:0 }
+
+
+.pb0{ padding-bottom:0 }
+
+
+.pl0{ padding-left:0 }
+
+
+.px0{ padding-left:0; padding-right:0 }
+
+
+.py0{ padding-top:0;  padding-bottom:0 }
+
+
 .p1{ padding:.5rem }
+
+
+.pt1{ padding-top:.5rem }
+
+
+.pr1{ padding-right:.5rem }
+
+
+.pb1{ padding-bottom:.5rem }
+
+
+.pl1{ padding-left:.5rem }
 
 
 .py1{ padding-top:.5rem; padding-bottom:.5rem }
@@ -606,6 +672,18 @@ hr{
 .p2{ padding:1rem }
 
 
+.pt2{ padding-top:1rem }
+
+
+.pr2{ padding-right:1rem }
+
+
+.pb2{ padding-bottom:1rem }
+
+
+.pl2{ padding-left:1rem }
+
+
 .py2{ padding-top:1rem; padding-bottom:1rem }
 
 
@@ -615,6 +693,18 @@ hr{
 .p3{ padding:2rem }
 
 
+.pt3{ padding-top:2rem }
+
+
+.pr3{ padding-right:2rem }
+
+
+.pb3{ padding-bottom:2rem }
+
+
+.pl3{ padding-left:2rem }
+
+
 .py3{ padding-top:2rem; padding-bottom:2rem }
 
 
@@ -622,6 +712,18 @@ hr{
 
 
 .p4{ padding:4rem }
+
+
+.pt4{ padding-top:4rem }
+
+
+.pr4{ padding-right:4rem }
+
+
+.pb4{ padding-bottom:4rem }
+
+
+.pl4{ padding-left:4rem }
 
 
 .py4{ padding-top:4rem; padding-bottom:4rem }
@@ -1045,35 +1147,30 @@ hr{
 .border{
   border-style:solid;
   border-width:1px;
-  border-color:rgba(0,0,0,.125);
 }
 
 
 .border-top{
   border-top-style:solid;
   border-top-width:1px;
-  border-top-color:rgba(0,0,0,.125);
 }
 
 
 .border-right{
   border-right-style:solid;
   border-right-width:1px;
-  border-right-color:rgba(0,0,0,.125);
 }
 
 
 .border-bottom{
   border-bottom-style:solid;
   border-bottom-width:1px;
-  border-bottom-color:rgba(0,0,0,.125);
 }
 
 
 .border-left{
   border-left-style:solid;
   border-left-width:1px;
-  border-left-color:rgba(0,0,0,.125);
 }
 
 
