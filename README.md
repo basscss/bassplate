@@ -37,7 +37,32 @@ Start watching files for compilation.
 npm start
 ```
 
-Use `index.html` as a starting point and edit the files in `src/` to customize the CSS.
+Use `index.html` as a starting point, and edit `src/base.css` to customize the CSS.
+
+## Adding optional modules
+
+To add [other helpful basscss modules](https://www.npmjs.com/search?q=basscss), add the relevant `@import` to `src/base.css` and add the dependency to your `package.json`
+
+So to add the basscss [background image utils](https://github.com/basscss/background-images)
+you'd:
+
+**Edit `src/base.css`**
+
+```css
+@import 'basscss-background-images';
+```
+
+**Add the dependency**
+
+```sh
+npm install basscss-background-images
+```
+
+and then recompile with
+
+```sh
+npm run css
+```
 
 ---
 
