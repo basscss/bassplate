@@ -9,57 +9,46 @@
  */
 
 
+@import 'basscss-basic';
+
 /* Basscss Modules */
-@import 'basscss-base-reset';
-@import 'basscss-base-forms';
-@import 'basscss-base-tables';
-@import 'basscss-base-typography';
-@import 'basscss-color-base';
-@import 'basscss-color-forms';
-@import 'basscss-color-tables';
-@import 'basscss-btn';
-@import 'basscss-btn-primary';
-@import 'basscss-btn-outline';
 @import 'basscss-type-scale';
-@import 'basscss-utility-typography';
-@import 'basscss-utility-layout';
+@import 'basscss-typography';
+@import 'basscss-layout';
 @import 'basscss-align';
 @import 'basscss-margin';
 @import 'basscss-padding';
-@import 'basscss-position';
-@import 'basscss-responsive-states';
 @import 'basscss-grid';
-@import 'flex-object';
+@import 'basscss-flexbox';
+@import 'basscss-position';
 @import 'basscss-border';
-@import 'basscss-colors';
-@import 'basscss-background-colors';
+@import 'basscss-hide';
 
 
 /* Optional Modules (not included in Basscss by default) */
 /*
-@import 'basscss-btn-sizes';
-@import 'basscss-color-forms-dark';
-@import 'basscss-input-range';
-@import 'basscss-progress';
-@import 'basscss-background-images';
-@import 'basscss-media-object';
-@import 'basscss-responsive-white-space';
-@import 'basscss-utility-headings';
-@import 'basscss-ui-utility-groups';
-@import 'basscss-table-object';
-@import 'basscss-highlight-dark';
-@import 'basscss-highlight';
+
+@import 'basscss-addons/modules/responsive-margin';
+@import 'basscss-addons/modules/responsive-padding';
+
+@import 'basscss-addons/modules/media-object';
+@import 'basscss-addons/modules/all';
+@import 'basscss-addons/modules/forms';
+@import 'basscss-addons/modules/input-range';
+@import 'basscss-addons/modules/progress';
+
+@import 'basscss-addons/modules/btn';
+@import 'basscss-addons/modules/btn-primary';
+@import 'basscss-addons/modules/btn-outline';
+@import 'basscss-addons/modules/btn-sizes';
+
+@import 'basscss-addons/modules/colors';
+@import 'basscss-addons/modules/background-colors';
+@import 'basscss-addons/modules/border-colors';
+@import 'basscss-addons/modules/darken';
+@import 'basscss-addons/modules/lighten';
+@import 'basscss-addons/modules/background-images';
 */
-
-
-/* Example custom file import */
-/*
-@import './color/borders';
-*/
-
-
-/* Default custom properties */
-@import 'basscss-defaults';
 
 
 /* Custom media queries */
@@ -73,14 +62,6 @@
 /* Custom properties */
 /*
 :root {
-
-  --font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  --line-height: 1.5;
-  --heading-font-family: var(--font-family);
-  --heading-font-weight: bold;
-  --heading-line-height: 1.25;
-  --monospace-font-family: 'Source Code Pro', Consolas, monospace;
-
   --h1: 2rem;
   --h2: 1.5rem;
   --h3: 1.25rem;
@@ -95,55 +76,8 @@
   --space-3: 2rem;
   --space-4: 4rem;
 
-  --form-field-font-size: 1rem;
-  --form-field-height: 2.25rem;
-  --form-field-padding-y: .5rem;
-  --form-field-padding-x: .5rem;
-
-  --button-font-size: inherit;
-  --button-font-weight: bold;
-  --button-line-height: 1.125rem;
-  --button-padding-y: .5rem;
-  --button-padding-x: 1rem;
-
-  --container-width: 64em;
-
-  --black:  #111;
-  --gray:   #aaa;
-  --silver: #ddd;
-  --white:  #fff;
-
-  --aqua:   #7fdbff;
-  --blue:   #0074d9;
-  --navy:   #001f3f;
-  --teal:   #39cccc;
-  --green:  #2ecc40;
-  --olive:  #3d9970;
-  --lime:   #01ff70;
-
-  --yellow: #ffdc00;
-  --orange: #ff851b;
-  --red:    #ff4136;
-  --fuchsia:#f012be;
-  --purple: #b10dc9;
-  --maroon: #85144b;
-
-
-  --darken-1: rgba(0,0,0,.0625);
-  --darken-2: rgba(0,0,0,.125);
-  --darken-3: rgba(0,0,0,.25);
-  --darken-4: rgba(0,0,0,.5);
-
   --border-width: 1px;
   --border-radius: 3px;
-  --border-color: var(--darken-2);
-  --hover-background-color: var(--darken-1);
-
-  --link-color: var(--blue);
-  --button-background-color: var(--blue);
-  --pre-background-color: var(--silver);
-
-
 }
 */
 
